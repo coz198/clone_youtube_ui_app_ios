@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB76A876211B0BBF002E7C47 /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB76A875211B0BBF002E7C47 /* MenuBar.swift */; };
+		EB76A878211B64EF002E7C47 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB76A877211B64EF002E7C47 /* MenuCell.swift */; };
 		EB8D7EAF211A2A4E00DD3108 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8D7EAE211A2A4E00DD3108 /* Extensions.swift */; };
 		EB8D7EB2211A2AB800DD3108 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8D7EB1211A2AB800DD3108 /* VideoCell.swift */; };
 		EBD359752119BBEC005F1613 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD359742119BBEC005F1613 /* AppDelegate.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EB76A875211B0BBF002E7C47 /* MenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
+		EB76A877211B64EF002E7C47 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		EB8D7EAE211A2A4E00DD3108 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		EB8D7EB1211A2AB800DD3108 /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 		EBD359712119BBEC005F1613 /* utube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = utube.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +55,8 @@
 			isa = PBXGroup;
 			children = (
 				EB8D7EB1211A2AB800DD3108 /* VideoCell.swift */,
+				EB76A875211B0BBF002E7C47 /* MenuBar.swift */,
+				EB76A877211B64EF002E7C47 /* MenuCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -168,8 +174,10 @@
 			files = (
 				EBD359772119BBEC005F1613 /* HomeController.swift in Sources */,
 				EB8D7EB2211A2AB800DD3108 /* VideoCell.swift in Sources */,
+				EB76A878211B64EF002E7C47 /* MenuCell.swift in Sources */,
 				EB8D7EAF211A2A4E00DD3108 /* Extensions.swift in Sources */,
 				EBD359752119BBEC005F1613 /* AppDelegate.swift in Sources */,
+				EB76A876211B0BBF002E7C47 /* MenuBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

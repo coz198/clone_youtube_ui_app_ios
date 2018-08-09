@@ -23,15 +23,31 @@ class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLa
     
         navigationController?.navigationBar.isTranslucent = false
     
-        
         collectionView?.backgroundColor = UIColor.white
+        collectionView?.contentInset = UIEdgeInsets(top: 50, left: 0, bottom: 0, right: 0)
+        collectionView?.scrollIndicatorInsets = UIEdgeInsets(top: 50, left: 0, bottom: 0, right: 0)
         
         //se dang ky 1 class de create items
         collectionView?.register(VideoCell.self, forCellWithReuseIdentifier: "cellId")
+        
+        setupMenuBar()
     }
+    
+    let menuBar : MenuBar = {
+        let mnBar = MenuBar()
+        
+        return mnBar
+    }()
+    
+    private func setupMenuBar(){
+        view.addSubview(menuBar)
+        view.addContraintsWithFormat(format: "H:|[v0]|", views: menuBar)
+        view.addContraintsWithFormat(format: "V:|[v0(50)]", views: menuBar)
+    }
+    
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return 5
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
